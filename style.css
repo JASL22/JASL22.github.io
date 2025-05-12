@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background-color: #1e40af;
+  background-color: #cf11d2;
   padding: 10px 0;
 }
 
@@ -33,7 +33,7 @@ header {
 
 .navbar a:hover {
   background-color: white;
-  color: #1e40af;
+  color: #1e2faf;
 }
 
 section {
@@ -42,7 +42,7 @@ section {
   padding: 20px;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(226, 17, 17, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -51,17 +51,21 @@ section:hover {
 }
 
 h1, h2 {
-  color: #1e40af;
+  color: #af3b1e;
 }
 
 ul {
   padding-left: 20px;
 }
 
-img {
-  max-width: 200px;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+section img {
+  display: block;
+  margin: 30px auto; /* centra la imagen */
+  width: 250px;
+  height: 250px;
+  object-fit: cover; /* asegura que se recorte a cuadrado sin deformar */
+  border-radius: 10px; /* ya no es redonda, sino esquinas suaves */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 footer {
