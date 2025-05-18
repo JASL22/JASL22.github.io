@@ -12,20 +12,6 @@ body {
   color: #2d3748; /* texto gris oscuro */
 }
 
-/* Aplicamos la animación al body con la clase fade-in */
-.fade-in {
-  animation: fadeIn 1s ease forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 header {
   background-color: #1e3a8a; /* azul profundo */
   padding: 10px 0;
@@ -100,6 +86,20 @@ video {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Animación fade-in para toda la página */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
 }
 
 footer {
