@@ -8,12 +8,15 @@ h1 {
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  background-color: #f0f4f8; /* gris claro */
-  color: #2d3748; /* texto gris oscuro */
+  background-color: #f0f4f8;
+  /* gris claro */
+  color: #2d3748;
+  /* texto gris oscuro */
 }
 
 header {
-  background-color: #1e3a8a; /* azul profundo */
+  background-color: #1e3a8a;
+  /* azul profundo */
   padding: 10px 0;
 }
 
@@ -48,7 +51,8 @@ header {
 }
 
 .navbar a:hover {
-  background-color: #3b82f6; /* azul brillante */
+  background-color: #3b82f6;
+  /* azul brillante */
   color: white;
 }
 
@@ -60,7 +64,8 @@ section {
   max-width: 900px;
   margin: 40px auto;
   padding: 20px;
-  background-color: #e2e8f0; /* fondo gris suave */
+  background-color: #e2e8f0;
+  /* fondo gris suave */
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
@@ -82,6 +87,7 @@ h3 {
     transform: translateY(-20px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -118,6 +124,7 @@ section img:hover {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -133,6 +140,7 @@ section img:hover {
     transform: translateY(20px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -166,11 +174,97 @@ footer {
 }
 
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.05);
+  }
+}
+
+/* Estilos para las redes sociales */
+.contacto-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.contacto-redes img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+  opacity: 0.85;
+  border-radius: 6px;
+}
+
+.contacto-redes img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.2) saturate(1.2);
+}
+
+/* Estilo para el enlace de Gmail con tooltip */
+.gmail-link {
+  position: relative;
+  display: inline-block;
+}
+
+.gmail-link .tooltip {
+  visibility: hidden;
+  width: 100px;
+  background-color: #3b82f6;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -50px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.8rem;
+}
+
+.gmail-link:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.fade-stagger {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeStagger 0.6s ease forwards;
+}
+
+.fade-stagger:nth-of-type(1) {
+  animation-delay: 0.2s;
+}
+
+.fade-stagger:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+
+.fade-stagger:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+
+.fade-stagger:nth-of-type(4) {
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeStagger {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
