@@ -1,27 +1,19 @@
 /* Fuente moderna desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+h1 {
+  text-align: center;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  background-color: #f0f4f8;
-  color: #2d3748;
-  animation: fade-in 1s ease-in-out;
+  background-color: #f0f4f8; /* gris claro */
+  color: #2d3748; /* texto gris oscuro */
 }
 
 header {
-  background-color: #1e3a8a;
+  background-color: #1e3a8a; /* azul profundo */
   padding: 10px 0;
 }
 
@@ -44,7 +36,7 @@ header {
 }
 
 .navbar a:hover {
-  background-color: #3b82f6;
+  background-color: #3b82f6; /* azul brillante */
   color: white;
 }
 
@@ -52,16 +44,24 @@ section {
   max-width: 900px;
   margin: 40px auto;
   padding: 20px;
-  background-color: #e2e8f0;
+  background-color: #e2e8f0; /* fondo gris suave */
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  animation: fade-in 1s ease forwards;
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.01);
 }
 
 h1,
 h2 {
   color: #1e3a8a;
-  text-align: center;
+}
+
+h3.subtitulo {
+  color: #1e3a8a;
+  margin-top: 25px;
 }
 
 ul {
@@ -76,12 +76,30 @@ section img {
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-section img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+/* Estilos para el video */
+video {
+  display: block;
+  margin: 30px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Animación fade-in para toda la página */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
 }
 
 footer {
@@ -108,14 +126,5 @@ footer {
   section img {
     width: 180px;
     height: 180px;
-  }
-
-  .color-apartado {
-    background-color: white;
-    color: black;
-    padding: 20px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
   }
 }
