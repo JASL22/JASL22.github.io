@@ -140,12 +140,14 @@ header{
   font-weight:800;font-size:1.05rem;letter-spacing:-.02em;
   background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
 }
-.back-link{
+.portfolio-back{
+  position:fixed;right:1rem;bottom:1rem;z-index:100;
   display:inline-flex;align-items:center;justify-content:center;
-  padding:.4rem .7rem;border:1px solid var(--bd);border-radius:999px;
-  background:var(--card);color:var(--pri);font-weight:700;text-decoration:none;
+  padding:.7rem 1rem;border:2px solid var(--pri);border-radius:999px;
+  background:var(--card);color:var(--tx);font-weight:800;text-decoration:none;
+  box-shadow:var(--sh);backdrop-filter:blur(10px);
 }
-.back-link:hover{filter:brightness(1.1)}
+.portfolio-back:hover{transform:translateY(-2px)}
 nav{display:flex;flex-wrap:wrap;gap:.3rem;align-items:center}
 
 .themeSwitcher{
@@ -387,11 +389,11 @@ footer{text-align:center;padding:2.5rem 1rem;color:var(--mut);font-size:.92rem}
 <body>
 
 <div id="progressBar" role="progressbar" aria-label="Cargando el portafolio"></div>
+<a class="portfolio-back" href="index.html">← Elegir otro portafolio</a>
 
 <header>
  <div class="bar">
   <span class="brand">Jhonn Saeteros</span>
-  <a class="back-link" href="index.html">← Elegir otro portafolio</a>
   <nav id="nav" aria-label="Secciones del portafolio"></nav>
 
   <div class="themeSwitcher" role="radiogroup" aria-label="Elegir tema de color">

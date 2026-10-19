@@ -34,6 +34,8 @@ kbd{font:600 .72rem Montserrat,sans-serif;border:1px solid currentColor;border-r
 .btn:disabled{opacity:.45;cursor:not-allowed}
 .btn.ghost{background:transparent;color:var(--accent)}
 aside .btn.ghost{color:#e8eefb;border-color:#6d84ad}
+.portfolio-back{position:fixed;right:16px;bottom:16px;z-index:100;display:inline-flex;align-items:center;padding:12px 18px;border:2px solid var(--accent);border-radius:var(--r);background:var(--accent);color:var(--accent-ink);font:600 .9rem Montserrat,sans-serif;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.portfolio-back:hover{filter:brightness(1.12)}
 main{padding:40px clamp(20px,5vw,64px) 80px;max-width:920px}
 section{padding:8px 0 44px}
 h2{margin:0 0 6px;font-size:1.7rem;font-weight:800;color:var(--ink)}
@@ -95,6 +97,7 @@ dialog kbd{color:var(--ink)}
 </head>
 <body>
 <a class="skip" href="#main">Saltar al contenido</a>
+<a class="portfolio-back" href="index.html">← Elegir otro portafolio</a>
 <div id="bar" role="progressbar" aria-label="Avance de lectura" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
 <div class="layout">
 <aside>
@@ -107,7 +110,6 @@ dialog kbd{color:var(--ink)}
     <ul id="nav"></ul>
   </nav>
   <div class="tools">
-    <a class="btn ghost" href="index.html">← Elegir otro portafolio</a>
     <button class="btn ghost" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
     <button class="btn ghost" id="helpBtn" type="button">Ayuda <kbd>?</kbd></button>
   </div>

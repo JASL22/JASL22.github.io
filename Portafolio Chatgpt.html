@@ -24,6 +24,8 @@ header.top .brand{font-weight:800;margin-right:auto}
 .btn:hover{filter:brightness(1.12)}
 .btn:disabled{opacity:.4;cursor:not-allowed}
 .btn.ghost{background:transparent;color:var(--green)}
+.portfolio-back{position:fixed;right:16px;bottom:16px;z-index:100;display:inline-flex;align-items:center;padding:12px 18px;border:2px solid var(--hero-green);border-radius:var(--r);background:var(--hero);color:var(--hero-green);font:700 .9rem Archivo,sans-serif;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.portfolio-back:hover{background:var(--hero-green);color:#04130a}
 header.top .btn{border-color:var(--hero-green);background:transparent;color:var(--hero-green)}
 header.top .btn:hover{background:var(--hero-green);color:#04130a}
 kbd{font:700 .72rem Archivo,sans-serif;border:1.5px solid currentColor;border-radius:4px;padding:0 5px;opacity:.8}
@@ -88,9 +90,9 @@ dialog kbd{color:var(--ink)}
 </head>
 <body>
 <a class="skip" href="#main">Saltar al contenido</a>
+<a class="portfolio-back" href="index.html">← Elegir otro portafolio</a>
 <header class="top">
   <span class="brand">Jhonn Saeteros</span>
-  <a class="btn" href="index.html" aria-label="Volver al índice para elegir otro portafolio">← Portafolios</a>
   <button class="btn" id="expandBtn" type="button">Desplegar todo</button>
   <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
   <button class="btn" id="helpBtn" type="button" aria-label="Abrir ayuda">Ayuda <kbd>?</kbd></button>

@@ -54,7 +54,7 @@ Las herramientas se utilizaron como apoyo para experimentar con diferentes maner
 1. Descarga o clona el repositorio.
 2. Abre `index.html` en un navegador web.
 3. Selecciona una de las tres propuestas para visitar su página.
-4. Usa el botón **Portafolios** o **Elegir otro portafolio** de la página para volver al índice y explorar otra versión. También puedes usar el botón **Atrás** del navegador.
+4. Usa el botón fijo **Elegir otro portafolio** para volver al índice y explorar otra versión. También puedes usar el botón **Atrás** del navegador.
 
 ## Autor
 
