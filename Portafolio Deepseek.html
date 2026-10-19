@@ -140,6 +140,12 @@ header{
   font-weight:800;font-size:1.05rem;letter-spacing:-.02em;
   background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
 }
+.back-link{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:.4rem .7rem;border:1px solid var(--bd);border-radius:999px;
+  background:var(--card);color:var(--pri);font-weight:700;text-decoration:none;
+}
+.back-link:hover{filter:brightness(1.1)}
 nav{display:flex;flex-wrap:wrap;gap:.3rem;align-items:center}
 
 .themeSwitcher{
@@ -385,6 +391,7 @@ footer{text-align:center;padding:2.5rem 1rem;color:var(--mut);font-size:.92rem}
 <header>
  <div class="bar">
   <span class="brand">Jhonn Saeteros</span>
+  <a class="back-link" href="index.html">← Elegir otro portafolio</a>
   <nav id="nav" aria-label="Secciones del portafolio"></nav>
 
   <div class="themeSwitcher" role="radiogroup" aria-label="Elegir tema de color">
