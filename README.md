@@ -28,11 +28,9 @@ Las propuestas son diferentes aproximaciones para observar estos principios en u
 ├── index.html                  # Página principal y punto de entrada
 ├── Portafolio Chatgpt.html     # Propuesta desarrollada con ayuda de ChatGPT
 ├── Portafolio Claude.html      # Propuesta desarrollada con ayuda de Claude
-├── Porfafolio Deepseek.html    # Propuesta desarrollada con ayuda de DeepSeek
+├── Portafolio Deepseek.html    # Propuesta desarrollada con ayuda de DeepSeek
 └── README.md                   # Descripción y documentación del proyecto
 ```
-
-> El archivo de DeepSeek conserva el nombre `Porfafolio Deepseek.html` para que coincida con el enlace existente en la página principal.
 
 ## Tecnologías utilizadas
 
@@ -56,7 +54,7 @@ Las herramientas se utilizaron como apoyo para experimentar con diferentes maner
 1. Descarga o clona el repositorio.
 2. Abre `index.html` en un navegador web.
 3. Selecciona una de las tres propuestas para visitar su página.
-4. Usa el botón **Atrás** del navegador para volver al inicio y explorar otra versión.
+4. Usa el botón **Portafolios** o **Elegir otro portafolio** de la página para volver al índice y explorar otra versión. También puedes usar el botón **Atrás** del navegador.
 
 ## Autor
 
